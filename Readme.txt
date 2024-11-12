@@ -1,6 +1,6 @@
-Thanks for downloading this template!
 
-Template Name: DevFolio
+
+Template Name: Kelvin Ngendo
 Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-Author: BootstrapMade.com
+Author: https://github.com/NderKev
 License: https://bootstrapmade.com/license/
