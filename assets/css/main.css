@@ -1627,3 +1627,230 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* ============================================================
+   KELVIN NGENDO — Portfolio Enhancement Styles v2.0
+   ============================================================ */
+
+/* ── Hero: tech-stack tag pills ── */
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hero-tag {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  font-family: var(--nav-font);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-tag:hover {
+  background: rgba(0,120,255,0.3);
+  border-color: rgba(0,120,255,0.6);
+}
+
+/* ── Hero: CTA buttons ── */
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-hire {
+  background: var(--accent-color);
+  color: #ffffff !important;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 36px;
+  border-radius: 30px;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(0,120,255,0.35);
+}
+
+.btn-hire:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 15%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,120,255,0.45);
+}
+
+.btn-resume {
+  background: transparent;
+  color: #ffffff !important;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 36px;
+  border-radius: 30px;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-decoration: none !important;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-resume:hover {
+  border-color: #ffffff;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ── About: highlight cards ── */
+.highlight-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 12px;
+  padding: 18px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.highlight-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0,120,255,0.1);
+}
+
+.highlight-card i {
+  font-size: 22px;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.highlight-card strong {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  line-height: 1.3;
+}
+
+.highlight-card span {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1.4;
+}
+
+/* ── About: tech badges ── */
+.badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tech-badge {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  font-family: var(--nav-font);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  border-radius: 16px;
+  transition: background 0.2s;
+}
+
+.tech-badge:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+/* ── Skills: replace % labels with word labels ── */
+.about .progress .skill .val {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+/* ── Resume: timestamp badge ── */
+.resume .resume-item h5 {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 4px 12px;
+}
+
+/* ── Portfolio: sharper item descriptions ── */
+.portfolio-info p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ── Pricing: visual upgrade ── */
+.pricing-item {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 20px 28px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+  border-left: 4px solid var(--accent-color);
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.pricing-item:hover {
+  box-shadow: 0 6px 24px rgba(0,120,255,0.12);
+  transform: translateY(-2px);
+}
+
+.pricing-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pricing-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+  white-space: nowrap;
+  margin: 0 0 0 16px;
+}
+
+/* ── Contact: send button ── */
+.php-email-form button[type="submit"] {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 15%);
+  transform: translateY(-1px);
+}
+
+/* ── Mobile tweaks ── */
+@media (max-width: 768px) {
+  .hero-tags { gap: 6px; }
+  .hero-tag  { font-size: 11px; padding: 4px 10px; }
+  .btn-hire, .btn-resume { padding: 10px 24px; font-size: 14px; }
+  .highlight-card { padding: 14px 12px; }
+  .pricing-item { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .pricing-item h4 { margin: 0; }
+}
+
