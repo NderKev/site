@@ -1,771 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Kelvin Ngendo | Senior Blockchain Engineer & Web3 Architect</title>
-  <meta name="description" content="Kelvin Ngendo — Senior Blockchain Engineer with 8+ years building DeFi protocols, smart contracts, DAOs, and Web3 infrastructure on Ethereum, Solana, BNB Chain, Avalanche, Polygon, and Hyperledger. Available for remote engagements.">
-  <meta name="keywords" content="Blockchain Developer, Solidity Engineer, Smart Contract Auditor, DeFi Developer, Web3 Architect, Ethereum Developer, NFT, DAO, zk-SNARKs, Nairobi Kenya">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelvin Ngendo — Full-Stack Blockchain Developer &amp; Architect</title>
+  <meta name="description" content="Kelvin Ngendo designs and ships blockchain systems end to end: smart contracts, indexing, backends, frontends and infrastructure. 8+ years across Ethereum, BNB Chain, Polygon, Avalanche, Solana and Hyperledger. Based in Nairobi, working remotely.">
+  <link rel="canonical" href="https://nderkev.netlify.app/">
+  <meta name="theme-color" content="#E9EDF1">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Kelvin Ngendo | Senior Blockchain Engineer">
-  <meta property="og:description" content="8+ years engineering DeFi protocols, smart contracts, and Web3 infrastructure across EVM, Solana, and Hyperledger ecosystems.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nderkev.netlify.app/">
+  <meta property="og:title" content="Kelvin Ngendo — Full-Stack Blockchain Developer & Architect">
+  <meta property="og:description" content="Blockchain systems, designed and shipped end to end. 8+ years building DeFi protocols, DAOs and DLT platforms from contract to production.">
+  <meta property="og:image" content="https://nderkev.netlify.app/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nderebakelvin">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kelvin Ngendo",
+    "jobTitle": "Full-Stack Blockchain Developer & Architect",
+    "url": "https://nderkev.netlify.app/",
+    "image": "https://nderkev.netlify.app/assets/img/kelvin.jpg",
+    "email": "mailto:nderebakelvin@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+    "alumniOf": "Dedan Kimathi University of Technology",
+    "knowsAbout": ["Solidity", "Smart contract security", "DeFi", "Zero-knowledge proofs", "Rust", "Solana", "Ethereum", "Hyperledger Fabric", "Node.js", "React", "Next.js", "Cloud infrastructure"],
+    "sameAs": [
+      "https://github.com/NderKev/",
+      "https://www.linkedin.com/in/kelvin-ngendo-3a014098/",
+      "https://x.com/nderebakelvin",
+      "https://t.me/EVMBTCDev"
+    ]
+  }
+  </script>
 </head>
 
-<body class="index-page">
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Kelvin Ngendo</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="top">
+    <div class="wrap top-row">
+      <a href="#" class="brand">Kelvin Ngendo</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      <nav id="nav" class="nav">
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#process">Process</a>
+        <a href="#rates">Rates</a>
+        <a href="#contact" class="btn btn-small">Start a project</a>
       </nav>
-
     </div>
   </header>
 
-  <main class="main">
+  <main id="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/kev.jpg" alt="Kelvin Ngendo — Senior Blockchain Engineer" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>Kelvin Ngendo</h2>
-        <p><span class="typed" data-typed-items="Senior Blockchain Engineer, Web3 Architect, DeFi Protocol Developer, Smart Contract Auditor, zk-Proof Implementer"></span></p>
-
-        <!-- Tech stack tags -->
-        <div class="hero-tags" data-aos="fade-up" data-aos-delay="200">
-          <span class="hero-tag">Solidity</span>
-          <span class="hero-tag">EVM</span>
-          <span class="hero-tag">Rust</span>
-          <span class="hero-tag">Hardhat</span>
-          <span class="hero-tag">Foundry</span>
-          <span class="hero-tag">zk-SNARKs</span>
-          <span class="hero-tag">DeFi</span>
-          <span class="hero-tag">Ethereum</span>
-          <span class="hero-tag">Solana</span>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="dot" aria-hidden="true"></span>Available for remote engagements</p>
+          <h1>Blockchain systems, designed and shipped end&nbsp;to&nbsp;end.</h1>
+          <p class="lede">I’m Kelvin Ngendo, a full-stack blockchain developer and architect based in Nairobi. For 8+ years I’ve taken DeFi protocols, DAOs and enterprise DLT platforms from first architecture sketch through smart contracts, backends and frontends to production on Ethereum, BNB Chain, Polygon, Avalanche, Solana and Hyperledger&nbsp;Fabric.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn">Start a project</a>
+            <a href="https://gray-mariam-89.tiiny.site/" class="btn btn-ghost" target="_blank" rel="noopener">Read my CV</a>
+          </div>
+          <dl class="facts">
+            <div><dt>Revenue, Beep &amp; Odin</dt><dd>$3M+</dd></div>
+            <div><dt>Users in 6 months</dt><dd>100k+</dd></div>
+            <div><dt>Chains shipped to</dt><dd>12</dd></div>
+          </dl>
         </div>
 
-        <!-- Hero CTAs -->
-        <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
-          <a href="#contact" class="btn-hire">Hire Me</a>
-          <a href="https://gray-mariam-89.tiiny.site/" target="_blank" class="btn-resume">View CV</a>
+        <!-- The stack, drawn as a chain -->
+        <div class="chain" aria-label="The layers of the stack I own, linked as a chain of blocks">
+          <ol>
+            <li class="block" style="--i:0">
+              <div class="block-head"><span>Block 0</span><code title="previous hash">prev 0x0000000000</code></div>
+              <h2>Protocol &amp; smart contracts</h2>
+              <p>Solidity, Rust, Foundry, Hardhat, OpenZeppelin, Circom</p>
+              <code class="hash">0x2814d6ec4e</code>
+            </li>
+            <li class="block" style="--i:1">
+              <div class="block-head"><span>Block 1</span><code>prev 0x2814d6ec4e</code></div>
+              <h2>Data &amp; indexing</h2>
+              <p>The Graph, Chainlink, IPFS, event pipelines</p>
+              <code class="hash">0xabf62ea178</code>
+            </li>
+            <li class="block" style="--i:2">
+              <div class="block-head"><span>Block 2</span><code>prev 0xabf62ea178</code></div>
+              <h2>Backend &amp; APIs</h2>
+              <p>Node.js, NestJS, Express, Go, PostgreSQL, Redis</p>
+              <code class="hash">0x8d705f4210</code>
+            </li>
+            <li class="block" style="--i:3">
+              <div class="block-head"><span>Block 3</span><code>prev 0x8d705f4210</code></div>
+              <h2>Frontend &amp; wallets</h2>
+              <p>React, Next.js, Wagmi, Viem, Ethers.js</p>
+              <code class="hash">0x517e9f3543</code>
+            </li>
+            <li class="block" style="--i:4">
+              <div class="block-head"><span>Block 4</span><code>prev 0x517e9f3543</code></div>
+              <h2>Infrastructure &amp; nodes</h2>
+              <p>AWS, Azure, GCP, Docker, NGINX, GitHub Actions</p>
+              <code class="hash">0xa7bb727dd5</code>
+            </li>
+          </ol>
+          <p class="chain-note">One engineer, every layer. Each block hashes the one before it.</p>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- SHIPPED WITH -->
+    <section class="shipped" aria-label="Teams I've shipped with">
+      <div class="wrap">
+        <p>Shipped with</p>
+        <ul>
+          <li>Energi</li><li>Attrace</li><li>BTM Malaysia</li><li>AgroAfrica</li><li>AXKLedger</li><li>G&amp;H Blockchain</li><li>Trustabit</li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/prof_pic.jpg" class="img-fluid" alt="Kelvin Ngendo">
-              </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name:</strong> <span>Kelvin Ngendo</span></p>
-                <p><strong>Role:</strong> <span>Senior Blockchain Engineer</span></p>
-                <p><strong>Experience:</strong> <span>8+ Years</span></p>
-                <p><strong>Email:</strong> <span>nderebakelvin@gmail.com</span></p>
-                <p><strong>Phone:</strong> <span>+254 108 057 818</span></p>
-                <p><strong>Location:</strong> <span>Nairobi, Kenya (Remote)</span></p>
-              </div>
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Core Technical Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>Solidity / EVM Smart Contracts</span> <i class="val">Expert</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>TypeScript / JavaScript (Web3.js · Ethers.js)</span> <i class="val">Expert</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>Node.js / Express / NestJS</span> <i class="val">Advanced</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>React.js / Next.js</span> <i class="val">Advanced</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>Rust (Solana Programs)</span> <i class="val">Proficient</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>Golang</span> <i class="val">Proficient</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"><span>C / C++ / Python</span> <i class="val">Competent</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div><!-- End Skills -->
-
-            <!-- Tech Stack Badges -->
-            <div class="tech-badges" data-aos="fade-up" data-aos-delay="200">
-              <h5 style="margin-top:24px; margin-bottom:12px;">Toolchain &amp; Ecosystem</h5>
-              <div class="badge-wrap">
-                <span class="tech-badge">Hardhat</span>
-                <span class="tech-badge">Foundry</span>
-                <span class="tech-badge">Truffle</span>
-                <span class="tech-badge">OpenZeppelin</span>
-                <span class="tech-badge">Chainlink</span>
-                <span class="tech-badge">IPFS</span>
-                <span class="tech-badge">The Graph</span>
-                <span class="tech-badge">Wagmi</span>
-                <span class="tech-badge">Viem</span>
-                <span class="tech-badge">AWS</span>
-                <span class="tech-badge">Azure</span>
-                <span class="tech-badge">PostgreSQL</span>
-                <span class="tech-badge">Redis</span>
-                <span class="tech-badge">Docker</span>
-                <span class="tech-badge">NGINX</span>
-                <span class="tech-badge">GitHub Actions</span>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>About Me</h4>
-              <p>
-                Senior Blockchain Engineer with <strong>8+ years</strong> of hands-on experience architecting and shipping
-                production-grade DeFi protocols, smart contracts, DAOs, and Web3 infrastructure across EVM-compatible
-                chains (Ethereum, BNB Chain, Polygon, Avalanche, Multichain), Solana, Bitcoin Core, Cardano, and
-                Hyperledger Fabric.
-              </p>
-              <p>
-                Deep expertise in <strong>Solidity</strong>, <strong>Web3.js</strong>, and <strong>Ethers.js</strong> —
-                spanning token engineering (ERC-20/721/1155/4626), AMM/DEX design, yield-farming mechanics,
-                multi-signature wallet infrastructure, and cross-chain bridge contracts. Possess a strong command of
-                <strong>zero-knowledge cryptography</strong> (zk-SNARKs &amp; zk-STARKs), enabling the implementation of
-                privacy-preserving protocols and scalability solutions at the protocol layer.
-              </p>
-              <p>
-                At <strong>BTM Malaysia</strong>, co-engineered the Beep and Odin Web3 applications that generated over
-                <strong>$3 million in revenue</strong> from hundreds of thousands of users within 6 months. As
-                <strong>CTO &amp; Co-Founder of AgroAfrica</strong>, spearheaded the design of a distributed-ledger
-                solution that enables African farmers to sell produce directly on a global market — eliminating brokers
-                and ensuring full supply-chain traceability through verifiable on-chain records.
-              </p>
-              <p>
-                Proven technical leader: experienced in directing cross-functional engineering teams, conducting smart
-                contract audits, architecting cloud DevOps pipelines on AWS, Azure, GCP, and Digital Ocean, and
-                communicating complex blockchain concepts clearly to non-technical stakeholders and investors.
-              </p>
-
-              <!-- Highlight cards -->
-              <div class="row g-3 mt-2">
-                <div class="col-6">
-                  <div class="highlight-card">
-                    <i class="bi bi-shield-check"></i>
-                    <strong>Smart Contract Auditor</strong>
-                    <span>Vulnerability analysis &amp; security reviews</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="highlight-card">
-                    <i class="bi bi-diagram-3"></i>
-                    <strong>Protocol Architect</strong>
-                    <span>DeFi, DAOs, AMMs &amp; cross-chain bridges</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="highlight-card">
-                    <i class="bi bi-lock"></i>
-                    <strong>ZK Proof Engineer</strong>
-                    <span>zk-SNARKs &amp; zk-STARKs implementations</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="highlight-card">
-                    <i class="bi bi-globe"></i>
-                    <strong>Multi-Chain Builder</strong>
-                    <span>EVM · Solana · Cardano · Hyperledger</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+    <!-- STACK / WHAT I OWN -->
+    <section id="stack" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What I own on a project</h2>
+          <p>Most teams split a blockchain product across a contracts dev, a backend dev, a frontend dev and someone who babysits the nodes. I architect and build across all of it, so the pieces are designed to fit from day one.</p>
         </div>
 
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Senior Blockchain Engineer — Professional Timeline &amp; Credentials &nbsp;·&nbsp;
-          <a href="https://gray-mariam-89.tiiny.site/" target="_blank" style="color:var(--accent-color);">Download Full CV ↗</a>
-        </p>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Kelvin Ngendo</h4>
-              <p><em>Remote Senior Blockchain Engineer · Full-Stack Web2 / Web3 · Expert in Solidity, TypeScript, Node.js, React, and DeFi Protocol Design · Smart Contract Auditor · Ex-Blockchain Engineer at Energi &amp; Attrace</em></p>
-              <ul>
-                <li>Nairobi 00100, Kenya — Available Worldwide (Remote)</li>
-                <li>+254 108 057 818</li>
-                <li>nderebakelvin@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Science — Information Technology</h4>
-              <h5>2012 – 2016</h5>
-              <p><em>Dedan Kimathi University of Technology (DeKUT), Nyeri, Kenya</em></p>
-              <p>Graduated with distinction in software engineering and distributed systems. Active member of ACCA and CSOK professional clubs. Worked part-time as a database administrator and web developer for county government agencies and SACCOs.</p>
-            </div>
-
-            <h3 class="resume-title">Certifications &amp; Recognition</h3>
-            <div class="resume-item">
-              <h4>Blockchain &amp; Smart Contract Development</h4>
-              <h5>Ongoing</h5>
-              <ul>
-                <li>Ethereum Foundation — Solidity development track</li>
-                <li>OpenZeppelin — Secure smart contract design patterns</li>
-                <li>Hardhat &amp; Foundry advanced testing methodologies</li>
-                <li>Zero-Knowledge Proof engineering (Circom / SnarkJS)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>CTO &amp; Co-Founder — AgroAfrica</h4>
-              <h5>January 2019 – Present</h5>
-              <p><em>Nairobi, Kenya · Remote</em></p>
-              <ul>
-                <li>Architected a full Distributed Ledger Technology (DLT) platform revolutionising the African agricultural supply chain — delivering traceability, autonomous payments, and direct market access for farmers.</li>
-                <li>Led a cross-functional team of 5 engineers; defined technical roadmap, sprint planning, and code-quality standards.</li>
-                <li>Designed and audited all on-chain smart contracts and off-chain backend integrations end-to-end.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Full-Time Blockchain Developer — AXKLedger</h4>
-              <h5>January 2024 – October 2024</h5>
-              <p><em>Nairobi, Kenya</em></p>
-              <ul>
-                <li>Developed, tested, and deployed the AXKLedger backend on Azure Ubuntu VM and DLT smart contracts on the LISK testnet using Solidity, Hardhat, Web3.js, and Ethers.js.</li>
-                <li>Built the backend API with Express.js, Knex, Redis, and PostgreSQL — enabling brokerage-free produce trading with on-chain supply-chain verifiability.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Blockchain Engineer — Energi (NRG)</h4>
-              <h5>2019 – 2022</h5>
-              <p><em>Remote</em></p>
-              <ul>
-                <li>Contributed to EVM smart contract development and security hardening for the Energi blockchain — one of the most secure Proof-of-Stake EVM networks.</li>
-                <li>Implemented staking contracts, governance modules, and cross-chain bridge logic.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Full-Stack Blockchain Developer — BTM Malaysia</h4>
-              <h5>November 2017 – October 2018</h5>
-              <p><em>Cyberjaya, Malaysia · On-site</em></p>
-              <ul>
-                <li>Engineered the Beep and Odin DApps, generating <strong>$3M+ revenue</strong> from 100k+ users in under 6 months.</li>
-                <li>Developed ERC-20/ERC-865/ERC-223 tokens, BTC/ETH wallets, payment gateways, and DAO contracts.</li>
-                <li>Managed DevOps via AWS Linux, GitHub, JIRA, and Trello; configured NGINX and automated Cron jobs.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Web3 Protocol Engineer — Attrace</h4>
-              <h5>Contract · Remote</h5>
-              <p><em>Netherlands-based Referral Protocol for Web3</em></p>
-              <ul>
-                <li>Built and audited referral tracking smart contracts on the Attrace protocol — a decentralised affiliate layer for DeFi projects.</li>
-              </ul>
-            </div>
-
-          </div>
-
+        <div class="own">
+          <article>
+            <h3>Protocol architecture</h3>
+            <p>Token and incentive design, upgrade strategy, access control and failure modes, written down before a line of Solidity. AMMs, lending, staking, vaults (ERC-4626), DAOs and multisig treasuries.</p>
+          </article>
+          <article>
+            <h3>Smart contracts that survive audit</h3>
+            <p>Solidity on EVM chains and Rust on Solana, built test-first in Foundry and Hardhat with fuzzing and invariant tests. I review for reentrancy, oracle manipulation, front-running and access-control flaws before anyone else has to.</p>
+          </article>
+          <article>
+            <h3>Zero-knowledge features</h3>
+            <p>zk-SNARK circuits in Circom and SnarkJS for private transfers, identity proofs and rollup-style batching, with an understanding of where zk-STARKs fit better.</p>
+          </article>
+          <article>
+            <h3>Cross-chain and interoperability</h3>
+            <p>Bridge contracts, cross-chain messaging and multi-chain deployment pipelines across EVM networks, Solana, Cardano and Hyperledger Fabric.</p>
+          </article>
+          <article>
+            <h3>The product around the chain</h3>
+            <p>TypeScript backends (Node.js, NestJS, Express) on PostgreSQL and Redis, subgraphs on The Graph, and React / Next.js frontends with Wagmi and Viem wallet flows that non-crypto users can actually finish.</p>
+          </article>
+          <article>
+            <h3>Production infrastructure</h3>
+            <p>CI/CD in GitHub Actions, Dockerised services, NGINX, node operations and monitoring on AWS, Azure, GCP and DigitalOcean.</p>
+          </article>
         </div>
 
+        <div class="langs">
+          <h3>Languages, by depth</h3>
+          <table>
+            <tbody>
+              <tr><th>Solidity / EVM</th><td><span class="meter" style="--v:98%"></span></td><td>Expert</td></tr>
+              <tr><th>TypeScript / JavaScript</th><td><span class="meter" style="--v:95%"></span></td><td>Expert</td></tr>
+              <tr><th>Node.js, NestJS, Express</th><td><span class="meter" style="--v:88%"></span></td><td>Advanced</td></tr>
+              <tr><th>React, Next.js</th><td><span class="meter" style="--v:82%"></span></td><td>Advanced</td></tr>
+              <tr><th>Rust (Solana programs)</th><td><span class="meter" style="--v:72%"></span></td><td>Proficient</td></tr>
+              <tr><th>Go</th><td><span class="meter" style="--v:68%"></span></td><td>Proficient</td></tr>
+              <tr><th>C, C++, Python</th><td><span class="meter" style="--v:62%"></span></td><td>Competent</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>End-to-end blockchain and full-stack engineering services — from protocol design to production deployment</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-currency-bitcoin"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>DeFi Protocol &amp; Smart Contract Engineering</h3>
-              </a>
-              <p>Full-cycle design, development, testing, and deployment of DeFi protocols — AMMs, lending platforms, staking contracts, DAOs, ERC-20/721/1155/4626 tokens — on EVM, Solana, and Hyperledger.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-shield-lock"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>Smart Contract Security Audit</h3>
-              </a>
-              <p>Comprehensive source-code audits covering reentrancy, integer overflow, access control flaws, oracle manipulation, and front-running. Delivered as a detailed security report with remediation guidance.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-eye-slash"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>Zero-Knowledge Proof Engineering</h3>
-              </a>
-              <p>Implementation of zk-SNARK and zk-STARK circuits using Circom and SnarkJS for privacy-preserving applications, scalable rollups, and identity verification systems.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-layers"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>Full-Stack Web3 DApp Development</h3>
-              </a>
-              <p>End-to-end DApp development combining on-chain logic with polished React/Next.js frontends, Node.js/NestJS backends, Wagmi/Viem wallet integrations, and The Graph subgraph indexing.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-arrow-left-right"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>Cross-Chain Bridge &amp; Integration</h3>
-              </a>
-              <p>Design and implementation of cross-chain messaging bridges, interoperability layers, and multi-chain deployment pipelines across EVM, Solana, Cardano, and Hyperledger Fabric.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-server"></i></div>
-              <a href="#contact" class="stretched-link">
-                <h3>Web3 DevOps &amp; Cloud Infrastructure</h3>
-              </a>
-              <p>Production-grade DevOps for blockchain nodes and backend services — CI/CD pipelines, AWS/Azure/GCP provisioning, NGINX configuration, Docker containerisation, and 24/7 uptime management.</p>
-            </div>
-          </div>
-
+    <!-- WORK -->
+    <section id="work" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Live protocols, consumer DApps and enterprise ledgers where I designed or built the core.</p>
         </div>
 
+        <article class="case case-lead">
+          <div class="case-body">
+            <h3>Beep &amp; Odin DApps <span class="org">BTM Malaysia</span></h3>
+            <p class="case-outcome">$3M+ revenue from 100k+ users in under six months.</p>
+            <p>Full-stack blockchain developer on two consumer Web3 apps. I built ERC-20, ERC-865 and ERC-223 tokens, BTC and ETH wallets, payment gateways and DAO contracts, and ran the AWS Linux infrastructure behind them.</p>
+            <ul class="tags"><li>Solidity</li><li>Token engineering</li><li>Wallets</li><li>Payments</li><li>AWS</li></ul>
+          </div>
+        </article>
+
+        <div class="cases">
+          <article class="case">
+            <img src="assets/img/work/agroafrica.png" alt="AgroAfrica logo" loading="lazy" width="120" height="85">
+            <div class="case-body">
+              <h3>AgroAfrica <span class="org">CTO &amp; co-founder</span></h3>
+              <p>A distributed-ledger marketplace that lets African farmers sell directly to global buyers, with smart-contract escrow replacing brokers and every hand-off recorded on chain for traceability. I designed the architecture, wrote and audited the contracts and led a team of five.</p>
+              <ul class="tags"><li>DLT architecture</li><li>Escrow contracts</li><li>Supply-chain traceability</li></ul>
+              <a class="link" href="https://www.github.com/NderKev/AgroAfrica" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <img src="assets/img/work/energy.png" alt="Energi logo" loading="lazy" width="85" height="85">
+            <div class="case-body">
+              <h3>Energi (NRG) <span class="org">Blockchain engineer</span></h3>
+              <p>Smart contract development and security hardening on a Proof-of-Stake EVM network, covering staking contracts, governance modules and cross-chain bridge logic.</p>
+              <ul class="tags"><li>PoS staking</li><li>Governance</li><li>Bridges</li></ul>
+              <a class="link" href="https://energi.world" target="_blank" rel="noopener">energi.world</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <img src="assets/img/work/axkl.png" alt="AXKLedger logo" loading="lazy" width="77" height="85">
+            <div class="case-body">
+              <h3>AXKLedger <span class="org">Blockchain developer</span></h3>
+              <p>Brokerage-free produce trading with on-chain supply-chain verification. Solidity contracts on the Lisk testnet, plus the Express, Knex, PostgreSQL and Redis backend deployed on Azure.</p>
+              <ul class="tags"><li>Solidity</li><li>Hardhat</li><li>Express</li><li>Azure</li></ul>
+              <a class="link" href="https://www.axkl.org" target="_blank" rel="noopener">axkl.org</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <img src="assets/img/work/attrace.png" alt="Attrace logo" loading="lazy" width="85" height="85">
+            <div class="case-body">
+              <h3>Attrace <span class="org">Web3 protocol engineer</span></h3>
+              <p>Built and audited referral-tracking contracts for a decentralised affiliate protocol used by DeFi projects.</p>
+              <ul class="tags"><li>Protocol contracts</li><li>Audit</li></ul>
+              <a class="link" href="https://attrace.com" target="_blank" rel="noopener">attrace.com</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <img src="assets/img/work/gandh.png" alt="G&amp;H Blockchain logo" loading="lazy" width="150" height="74">
+            <div class="case-body">
+              <h3>G&amp;H Blockchain <span class="org">Lead blockchain engineer</span></h3>
+              <p>Developed, tested, integrated and deployed an agricultural blockchain application giving farmers direct access to global markets.</p>
+              <ul class="tags"><li>Full-stack DApp</li><li>Deployment</li></ul>
+              <a class="link" href="https://www.gandhblockchain.com" target="_blank" rel="noopener">gandhblockchain.com</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <img src="assets/img/work/trustabit.jpeg" alt="Trustabit logo" loading="lazy" width="85" height="85">
+            <div class="case-body">
+              <h3>Trustabit <span class="org">Smart contracts</span></h3>
+              <p>Flight-delay tokenisation: contracts that compensate passengers automatically from on-chain escrow when a verifiable delay event arrives.</p>
+              <ul class="tags"><li>Parametric payouts</li><li>Oracles</li></ul>
+              <a class="link" href="https://www.startengine.com/trustabit1" target="_blank" rel="noopener">Project page</a>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Services Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years Experience</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="47" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects Delivered</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Million $ Revenue Generated</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Blockchains Deployed On</p>
-            </div>
-          </div>
-
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap exp-grid">
+        <div class="about">
+          <picture>
+            <source srcset="assets/img/kelvin.webp" type="image/webp">
+            <img src="assets/img/kelvin.jpg" alt="Portrait of Kelvin Ngendo" width="320" height="320" loading="lazy">
+          </picture>
+          <h2>Experience</h2>
+          <p>I lead teams as comfortably as I write contracts: setting technical roadmaps, running code review and audits, and explaining blockchain trade-offs to founders, investors and non-technical stakeholders.</p>
+          <dl class="about-meta">
+            <div><dt>Based in</dt><dd>Nairobi, Kenya (UTC+3), remote worldwide</dd></div>
+            <div><dt>Education</dt><dd>BSc Information Technology, Dedan Kimathi University of Technology, 2012–2016</dd></div>
+            <div><dt>Ongoing study</dt><dd>Ethereum Foundation Solidity track, OpenZeppelin secure patterns, Foundry testing, zk engineering with Circom</dd></div>
+          </dl>
         </div>
 
+        <ol class="timeline">
+          <li>
+            <time>2024</time>
+            <h3>Blockchain developer, AXKLedger</h3>
+            <p>Jan – Oct 2024 · Nairobi. Contracts on Lisk testnet and the full backend on Azure.</p>
+          </li>
+          <li>
+            <time>2019 – now</time>
+            <h3>CTO &amp; co-founder, AgroAfrica</h3>
+            <p>Architected the DLT platform end to end and led a team of five engineers: roadmap, sprints and code-quality standards.</p>
+          </li>
+          <li>
+            <time>2019 – 2022</time>
+            <h3>Blockchain engineer, Energi</h3>
+            <p>Remote. Staking, governance and bridge contracts; security hardening on a PoS EVM chain.</p>
+          </li>
+          <li>
+            <time>2017 – 2018</time>
+            <h3>Full-stack blockchain developer, BTM Malaysia</h3>
+            <p>Cyberjaya, on-site. Beep and Odin DApps: $3M+ revenue, 100k+ users in six months. Owned DevOps on AWS.</p>
+          </li>
+          <li>
+            <time>Contract</time>
+            <h3>Web3 protocol engineer, Attrace</h3>
+            <p>Remote, Netherlands-based. Referral-tracking contracts, built and audited.</p>
+          </li>
+        </ol>
       </div>
+    </section>
 
-    </section><!-- /Stats Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Selected blockchain projects — live protocols, DApps, and enterprise DLT deployments</p>
+    <!-- PROCESS -->
+    <section id="process" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How an engagement runs</h2>
+          <p>The same five stages whether it’s a two-week audit or a six-month protocol build. You get a written artifact at the end of each one.</p>
+        </div>
+        <ol class="steps">
+          <li><h3>Discovery &amp; threat model</h3><p>What the system must do, who might attack it and what failure costs. Output: a short brief and risk list.</p></li>
+          <li><h3>Architecture</h3><p>Contracts, data flow, off-chain services and upgrade path on one diagram. Output: an architecture doc you can hand to any engineer.</p></li>
+          <li><h3>Build, test-first</h3><p>Contracts with unit, fuzz and invariant tests, then the backend and frontend against a local fork. Weekly demos.</p></li>
+          <li><h3>Internal audit</h3><p>A line-by-line security pass with findings and fixes written up, so an external auditor starts from a clean base.</p></li>
+          <li><h3>Deploy &amp; operate</h3><p>Testnet, then mainnet with verified contracts, monitoring and a hand-over runbook.</p></li>
+        </ol>
       </div>
+    </section>
 
-      <div class="container">
+    <!-- RATES -->
+    <section id="rates" class="section">
+      <div class="wrap rates-grid">
+        <div class="section-head">
+          <h2>Rates</h2>
+          <p>Hourly, billed weekly. Fixed-price quotes are available once scope is clear, usually after the discovery stage.</p>
+        </div>
+        <table class="rates">
+          <tbody>
+            <tr><th>Zero-knowledge proof engineering</th><td>$100 / hr</td></tr>
+            <tr><th>DeFi protocol &amp; smart contract engineering</th><td>$85 / hr</td></tr>
+            <tr><th>Smart contract security audit</th><td>$80 / hr</td></tr>
+            <tr><th>Full-stack Web3 DApp development</th><td>$70 / hr</td></tr>
+            <tr><th>Backend API &amp; database engineering</th><td>$60 / hr</td></tr>
+            <tr><th>Cloud DevOps &amp; Linux servers</th><td>$55 / hr</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/agroafrica.png" class="img-fluid" alt="AgroAfrica">
-              <div class="portfolio-info">
-                <h4>AgroAfrica</h4>
-                <p>Blockchain DLT platform connecting African farmers directly to global markets — eliminating brokers via smart-contract escrow and on-chain traceability</p>
-                <a href="assets/img/portfolio/agroafrica.png" title="AgroAfrica" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.github.com/NderKev/AgroAfrica" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/energy.png" class="img-fluid" alt="Energi">
-              <div class="portfolio-info">
-                <h4>Energi (NRG)</h4>
-                <p>Contributed to one of the safest PoS EVM blockchain networks — smart contract development, staking modules, and governance contracts</p>
-                <a href="assets/img/portfolio/energy.png" title="Energi" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://energi.world" title="Live Site" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/attrace.png" class="img-fluid" alt="Attrace">
-              <div class="portfolio-info">
-                <h4>Attrace</h4>
-                <p>Decentralised referral protocol for Web3 — built and audited on-chain affiliate tracking contracts securing millions in protocol value</p>
-                <a href="assets/img/portfolio/attrace.png" title="Attrace" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://attrace.com" title="Live Site" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/trustabit.jpeg" class="img-fluid" alt="Trustabit">
-              <div class="portfolio-info">
-                <h4>Trustabit</h4>
-                <p>Flight-delay tokenisation platform — smart contracts that automatically compensate passengers from on-chain escrow upon verifiable delay events</p>
-                <a href="assets/img/portfolio/trustabit.jpeg" title="Trustabit" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.startengine.com/trustabit1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/axkl.png" class="img-fluid" alt="AXK Ledger">
-              <div class="portfolio-info">
-                <h4>AXK Ledger</h4>
-                <p>Full-stack blockchain ledger on LISK testnet — Express.js backend with PostgreSQL &amp; Redis, Solidity smart contracts enabling brokerage-free agricultural trading</p>
-                <a href="assets/img/portfolio/axkl.png" title="AXK Ledger" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.axkl.org" title="Live Site" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/gandh.png" class="img-fluid" alt="G&H Blockchain">
-              <div class="portfolio-info">
-                <h4>G&amp;H Blockchain</h4>
-                <p>Lead blockchain engineer — developed, tested, integrated, and deployed a full agricultural blockchain application enabling direct global market access for farmers</p>
-                <a href="assets/img/portfolio/gandh.png" title="G&H Blockchain" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.gandhblockchain.com" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-          </div>
-
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Tell me what you’re building</h2>
+          <p>A few lines on the product, the chain and your timeline is enough. I reply within one working day.</p>
+          <ul class="channels">
+            <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:nderebakelvin@gmail.com">nderebakelvin@gmail.com</a></li>
+            <li><i class="bi bi-whatsapp" aria-hidden="true"></i><a href="https://wa.me/254108057818" target="_blank" rel="noopener">+254 108 057 818 on WhatsApp</a></li>
+            <li><i class="bi bi-telegram" aria-hidden="true"></i><a href="https://t.me/EVMBTCDev" target="_blank" rel="noopener">@EVMBTCDev on Telegram</a></li>
+            <li><i class="bi bi-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/kelvin-ngendo-3a014098/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><i class="bi bi-github" aria-hidden="true"></i><a href="https://github.com/NderKev/" target="_blank" rel="noopener">github.com/NderKev</a></li>
+          </ul>
         </div>
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Transparent hourly rates for senior-level blockchain and full-stack engineering engagements</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 gx-lg-5">
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>DeFi Protocol &amp; Smart Contract Engineering</h3>
-              <h4>$85 / hr</h4>
-            </div>
+        <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company" class="form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty <input name="company"></label></p>
+          <div class="field-row">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
           </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Smart Contract Security Audit</h3>
-              <h4>$80 / hr</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Zero-Knowledge Proof Engineering</h3>
-              <h4>$100 / hr</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Full-Stack Web3 DApp Development</h3>
-              <h4>$70 / hr</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Backend API &amp; Database Engineering</h3>
-              <h4>$60 / hr</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Cloud DevOps &amp; Linux Server Management</h3>
-              <h4>$55 / hr</h4>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <p class="text-center text-muted" style="font-size:14px; margin-top:8px;">
-              Fixed-price project quotes available on request. <a href="#contact">Get in touch →</a>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Available for remote engagements worldwide — reach out directly via any channel below</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Location</h3>
-                  <p>Nairobi 00100, Kenya — Remote Worldwide</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call / WhatsApp</h3>
-                  <p>+254 108 057 818</p>
-                  <a aria-label="Chat on WhatsApp" href="https://wa.me/254108057818">
-                    <img alt="Chat on WhatsApp" src="assets/img/WhatsAppButtonGreenSmall.png" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>nderebakelvin@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-            </div>
-
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject (e.g. Smart Contract Audit Request)" required>
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Describe your project or requirement..." required></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
+          <label>What do you need?
+            <select name="service">
+              <option>New protocol or DApp build</option>
+              <option>Smart contract audit</option>
+              <option>Zero-knowledge feature</option>
+              <option>Architecture review</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>About the project<textarea name="message" rows="6" placeholder="Product, target chain, timeline, budget range" required></textarea></label>
+          <button type="submit" class="btn">Send message</button>
         </form>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelvin Ngendo</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/nderebakelvin" title="Twitter / X"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://facebook.com/YutManDevelopers" title="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://github.com/NderKev/" title="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://t.me/EVMBTCDev" title="Telegram"><i class="bi bi-telegram"></i></a>
-        <a href="https://join.skype.com/invite/NzbZohhulTq9/" title="Skype"><i class="bi bi-skype"></i></a>
-        <a href="https://www.linkedin.com/in/kelvin-ngendo-3a014098/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://github.com/NderKev/">Kelvin Ngendo</a>
-      </div>
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p>© <span id="yr">2026</span> Kelvin Ngendo. Full-stack blockchain developer &amp; architect.</p>
+      <nav aria-label="Social">
+        <a href="https://github.com/NderKev/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/kelvin-ngendo-3a014098/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/nderebakelvin" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://t.me/EVMBTCDev" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+      </nav>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js" defer></script>
 </body>
-
 </html>

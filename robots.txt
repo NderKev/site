@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nderkev.netlify.app/sitemap.xml
